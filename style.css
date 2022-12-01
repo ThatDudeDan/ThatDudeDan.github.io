@@ -1,7 +1,24 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(19, 17, 17);
+    color: antiquewhite;
+}
+
 #wrapper {
     display: flex;
     justify-content: center;
     justify-self: center;
+}
+
+h1 {
+    font-size: 3.25em;
+}
+
+h2 {
+    font-size: 2.1em;
 }
 
 #container {
@@ -17,16 +34,18 @@
     width: 50%;
     height: 50%;
     border-radius: 50%;
+    border: solid 3px antiquewhite;
 }
 
 p {
     max-width: 100%;
     word-wrap: break-word;
+    font-size: 1.7em;
 }
 
 .inner {
     max-width: 100%;
-    width: 850px;
+    width: 1000px;
 }
 
 img {
