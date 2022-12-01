@@ -1,0 +1,47 @@
+#wrapper {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+
+#container {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#danImg {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.inner {
+    max-width: 100%;
+    width: 850px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#workImg1 {
+    width:auto;
+}
+
+#workDetails1 {
+    display: inline;
+}
+
+#con1 {
+    display: flex;
+
+}
