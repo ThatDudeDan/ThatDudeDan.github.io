@@ -27,11 +27,18 @@
                         <h1 class="break"></h1>
                     </header>
                     <div id="main">
-                        <h2 id="danWork" class="heading">Past Work</h2>
+                        <h2 id="danWork" class="heading">Work Experience</h2>
+                        <p>Firstly, here are a couple of project that i have completed through my school tenure thus far.</p><br>
+                        <h2 class="workHeader">Book library CRUD project</h2>
                         <div id="con1">
                             <div class="conWrap">
-                                <div>
-                                    <button id="work1">Click</button>
+                                <div class="workImg">
+                                    <img src="BookLibrary.png">
+                                </div>
+                                <div class="work">
+                                    <p>I created a Book library using the Asp.Net framework through Visual studios, using C# on the backend, that allowed all Crud operations for different database tables, along with other functionality such as advanced sorting, searching and an email system when a new account was created.</p>
+                                    <button id="work1">View running Example</button>
+                                    <a class="workLink" href="https://github.com/ThatDudeDan/Book-Project">Github Repo</a>
                                     <div class="thing">
                                         <span class="close">Close &#10006</span>
                                         <video src="/2022-12-03 15-35-47.mp4" controls></video>
@@ -99,6 +106,7 @@
         function hideVideo () {
             videoCont.classList.remove("show");
             video.muted = true;
+            video.pause();
         }
       </script> 
 </html>

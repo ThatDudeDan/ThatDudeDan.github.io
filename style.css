@@ -95,13 +95,22 @@ body {
 }
 
 button {
-    font-size: 1.75em;
-    width: 150px;
+    font-size: 1.25em;
+    width: auto;
+    background-color: rgb(19, 17, 17);
+    color: antiquewhite;
     text-decoration: none;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
     border: 1px solid antiquewhite;
     padding: 15px;
+}
+
+button:hover {
+    color:rgb(19, 17, 17);
+    background-color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .conWrap {
@@ -153,15 +162,11 @@ h2 {
 p {
     max-width: 100%;
     word-wrap: break-word;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 ul {
     display: inline-block;
-}
-
-p:hover, li:hover {
-    font-size: 1.9em;
 }
 
 li{
@@ -204,6 +209,76 @@ iframe {
     display: none;
 }
 
+.workImg {
+    max-width: 45%;
+    float: left;
+}
+
+.workImg img {
+    max-width: 95%;
+    height: auto;
+}
+
+.work {
+    max-width: 55%;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.work button{
+    display: inline;
+}
+
+.workLink {
+    margin: auto;
+    font-size: 1.25em;
+    width: 150px;
+    text-decoration: none;
+    color: antiquewhite;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid antiquewhite;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.workLink:hover {
+    color:rgb(19, 17, 17);
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px)   {
+    .workLink {
+        display: block;
+        margin: auto;
+    }
+
+    .work button{
+        margin-top: 15px !important;
+        display: block;
+        margin: auto;
+    }
+
+    .workImg {
+        max-width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+    .work {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        float: none;
+    }
+    .work p {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
 @media only screen and (max-width: 750px)   {
     p , li{
         font-size: 1.25em;
@@ -214,7 +289,7 @@ iframe {
     }
 
     #buttonContainer a{
-        font-size: 1.25em;
+        font-size: 1.2em;
         padding: 10px;
     }
 }
