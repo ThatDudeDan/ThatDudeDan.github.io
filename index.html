@@ -5,11 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Daniel Goss</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="main.js"></script>
     </head>
     <body>
         <div id="wrapper">
             <div id="container">
                 <div class="inner">
+                    <div id="bodyCont">
                     <header id="head">
                         <img id="danImg" src="DanielTrue.jpg">
                         <h1 id="title">Daniel Goss</h1>
@@ -20,7 +22,7 @@
                         <div id="buttonContainer">
                             <a href="#danAbout">About Me</a>
                             <a href="#danWork">Work</a>
-                            <a href="#danContact">Contact</a>                            
+                            <a href="#danContact" id="contactButton">Contact</a>                            
                         </div>
                         <h1 class="break"></h1>
                     </header>
@@ -28,28 +30,75 @@
                         <h2 id="danWork" class="heading">Past Work</h2>
                         <div id="con1">
                             <div class="conWrap">
-                                <div id="workImg1">
-                                    <img class="workImg" src="kanye.jpg">
-                                </div>
-                                <div id="workDetails1">
-                                    <p>wqbfiowqhjrhadbfpiouryqwebeprluweouyrwqeheo[irhqwi</p>
-                                    
+                                <div>
+                                    <button id="work1">Click</button>
+                                    <div class="thing">
+                                        <span class="close">Close &#10006</span>
+                                        <video src="video.mp4" controls></video>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <h1 class="break"></h1>
                         <h2 id="danAbout" class="heading">About Me</h2>
-                        <p id="aboutText1"></p>
+                        <p id="aboutText1">As stated in the above section I am Daniel Goss, imcurrently enrolled in the Information Technology: Programmer Analyst program at NBCC, though im going to be graduation in June of this year. Through this program i have learned the basics of and deeper knowlege of many different languages and frameworks, such as:</p>
+                            <ul>
+                                <li>C#</li>
+                                <li>Javascript</li>
+                                <li>Java</li>
+                                <li>php</li>
+                                <li>sql</li>
+                                <li>HTML & CSS</li>
+                            </ul>
+                            <p>Ive also done some self learning on python, and while it is not at a deep level of knowledge, it has been fun to learn it on my own. </p>
+                            <p>Ive always loved anything to do with computers from a young age, whether that be programming, videos, learning about the hardware itself and everything else. Ive only in the past 2 years decided to pursue IT as acareer but i already know its what i want to do. I consider myself to be a quick learner for most things, and with that working together with my want to learn about many different things, will work great for any enviroment im put in. </p>
+                        
+
                         <h1 class="break"></h1>
-                        <h2 id="danContact" class="heading">Contact Info</h2>
-                        <div>
-
-                        </div>
-
+                    </div>
+                    </div>
+                    <div id="danContact">
+                        <h1>Gamer</h1>
                     </div>
                 </div>
             </div>
 
         </div>
     </body>
+    
+    <script type="text/javascript">
+        // function iframeLoaded() {
+        //     let iFrameID = document.getElementById('Walter');
+        //     iFrameID.classList.remove("inactive");
+        //     iFrameID.classList.add("active");
+        //     if(iFrameID) {
+        //           iFrameID.height = "";
+        //           iFrameID.width = "";
+        //           iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+        //           iFrameID.width = iFrameID.contentWindow.document.body.scrollWidth + "px";
+        //           console.log(iFrameID);
+        //     }   
+        // }
+
+        const btn = document.querySelector("#work1");
+
+        const videoCont = document.querySelector(".thing");
+
+        const video = document.querySelector("video");
+
+        const close = document.querySelector(".close");
+
+        btn.addEventListener ("click", showVideo);
+        close.addEventListener ("click", hideVideo);
+
+        function showVideo() {
+            videoCont.classList.add("show");
+            video.muted = false;
+        }
+
+        function hideVideo () {
+            videoCont.classList.remove("show");
+            video.muted = true;
+        }
+      </script> 
 </html>
