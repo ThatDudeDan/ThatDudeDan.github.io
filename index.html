@@ -28,7 +28,7 @@
                     </header>
                     <div id="main">
                         <h2 id="danWork" class="heading">Work Experience</h2>
-                        <p>Firstly, here are a couple of project that i have completed through my school tenure thus far.</p><br>
+                        <p>Firstly, here are a couple of project that i have completed through my school tenure thus far. There are video examples of the programs running and links to the repositories for each of these assignments</p><br>
                         <h2 class="workHeader">Book library CRUD project</h2>
                         <div id="con1">
                             <div class="conWrap">
@@ -46,25 +46,43 @@
                                 </div>
                             </div>
                         </div>
+                        <h2 class="workHeader">Basic Quiz App</h2>
                         <div id="con1">
                             <div class="conWrap">
                                 <div class="workImg">
                                     <img src="/QuizAppBasic.png">
                                 </div>
                                 <div class="work">
-                                    <p>I created a Book library using the Asp.Net framework through Visual studios, using C# on the backend, that allowed all Crud operations for different database tables, along with other functionality such as advanced sorting, searching and an email system when a new account was created.</p>
+                                    <p>I made a basic quiz app that lets the user select a quiz from a list of pre-made quizes and complete the quiz. When finished the results are stored in an external json storage web service and the user can then view all quiz results that they have completed under an inputed username</p>
                                     <button class="workButton2">View running Example</button>
-                                    <a class="workLink" href="https://github.com/ThatDudeDan/Book-Project">Github Repo</a>
+                                    <a class="workLink" href="https://github.com/ThatDudeDan/QuizAppBasic">Github Repo</a>
                                     <div class="thing2">
                                         <span class="close2">Close &#10006</span>
-                                        <video class="vid2" src="/QuizAppBasic.png" controls></video>
+                                        <video class="vid2" src="/2022-12-03 23-08-53.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="workHeader"></h2>
+                        <div id="con1">
+                            <div class="conWrap">
+                                <div class="workImg">
+                                    <img src="/QuizAppBasic.png">
+                                </div>
+                                <div class="work">
+                                    <p>Created a List CRUD web page using full stack javascript, with javascript on the front end, a mongodb database, nodejs for libraries, express as the server hosting the app and using basic react to build the webpage. It only is a simple CRUD app but takes a full stack programming approach towards it.</p>
+                                    <button class="workButton3">View running Example</button>
+                                    <a class="workLink" href="https://github.com/ThatDudeDan/QuizAppBasic">Github Repo</a>
+                                    <div class="thing3">
+                                        <span class="close3">Close &#10006</span>
+                                        <video class="vid3" src="/2022-12-03 23-08-53.mp4" controls></video>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <h1 class="break"></h1>
                         <h2 id="danAbout" class="heading">About Me</h2>
-                        <p id="aboutText1">As stated in the above section I am Daniel Goss, imcurrently enrolled in the Information Technology: Programmer Analyst program at NBCC, though im going to be graduation in June of this year. Through this program i have learned the basics of and deeper knowlege of many different languages and frameworks, such as:</p>
+                        <p id="aboutText1">As stated in the above section I am Daniel Goss, i'm currently enrolled in the Information Technology: Programmer Analyst program at NBCC, though im going to be graduation in June of this year. Through this program i have learned the basics of and deeper knowlege of many different languages and frameworks, such as:</p>
                             <ul>
                                 <li>C#</li>
                                 <li>Javascript</li>
@@ -81,7 +99,13 @@
                     </div>
                     </div>
                     <div id="danContact">
-                        <h1>Gamer</h1>
+                        <h1>Contact Info</h1>
+                        <p>If you want to contact me for any reason you can reach me at these locations</p>
+                        <div>
+                            <a class="contactLinks" href="mailto: danielgoss619@gmail.com">Email</a>
+                            <a class="contactLinks" href="https://www.linkedin.com/in/daniel-goss-328716229/">LinkedIn</a>
+                        </div>
+                        <p>You can also reach me at my phone number - (506)271-1205</p>
                     </div>
                 </div>
             </div>
@@ -90,24 +114,29 @@
     </body>
     
     <script type="text/javascript">
-
         const btn = document.querySelector(".workButton");
         const btn2 = document.querySelector(".workButton2");
+        const btn3 = document.querySelector(".workButton3");
 
         const videoCont = document.querySelector(".thing");
         const videoCont2 = document.querySelector(".thing2");
+        const videoCont3 = document.querySelector(".thing3");
 
         const video = document.querySelector(".vid");
         const video2 = document.querySelector(".vid2");
+        const video3 = document.querySelector(".vid3");
 
         const closer = document.querySelector(".close");
         const closer2 = document.querySelector(".close2");
+        const closer3 = document.querySelector(".close3");
 
 
         btn.addEventListener("click", showVideo);
         btn2.addEventListener("click", showVideo2);
+        btn3.addEventListener("click", showVideo3);
         closer.addEventListener("click", hideVideo);
         closer2.addEventListener("click", hideVideo2);
+        closer3.addEventListener("click", hideVideo3);
 
         function showVideo() {
                 videoCont.classList.add("show");
@@ -117,6 +146,11 @@
         function showVideo2() {
                 videoCont2.classList.add("show");
                 video2.muted = false;
+        }
+
+        function showVideo3() {
+                videoCont3.classList.add("show");
+                video3.muted = false;
         }
 
         function hideVideo () {
@@ -129,6 +163,12 @@
                 videoCont2.classList.remove("show");
                 video2.muted = true;
                 video2.pause();
+        }
+
+        function hideVideo3 () {
+                videoCont3.classList.remove("show");
+                video3.muted = true;
+                video3.pause();
         }
       </script> 
 </html>
