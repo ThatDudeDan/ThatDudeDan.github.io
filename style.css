@@ -34,7 +34,7 @@ body {
     padding: 15px;
 }
 
-.thing {
+.thing, .thing2 {
     position: fixed;
     justify-content: center;
     top: 0;
@@ -50,7 +50,7 @@ body {
     transition: all 0.3s;
 }
 
-.thing .close {
+.thing .close, .thing2 .close2 {
     position: absolute;
     top: 20%;
     right: 25%;
@@ -59,7 +59,7 @@ body {
     cursor: pointer;
 }
 
-.thing video {
+.thing .vid, .thing2 .vid2 {
     width: 90%;
     max-width: 800px;
     opacity: 1;
@@ -68,12 +68,12 @@ body {
     transition: all 0.3s;
 }
 
-.thing.show {
+.thing.show, .thing2.show {
     pointer-events: all;
     opacity: 1;
 }
 
-.thing.show video {
+.thing.show .vid, .thing2.show .vid2 {
     transform: scale(1);
 }
 #title {
@@ -211,12 +211,15 @@ iframe {
 
 .workImg {
     max-width: 45%;
+    height: 100%;
     float: left;
 }
 
 .workImg img {
     max-width: 95%;
     height: auto;
+    border: solid 2px antiquewhite;
+    border-radius: 10px;
 }
 
 .work {

@@ -37,11 +37,27 @@
                                 </div>
                                 <div class="work">
                                     <p>I created a Book library using the Asp.Net framework through Visual studios, using C# on the backend, that allowed all Crud operations for different database tables, along with other functionality such as advanced sorting, searching and an email system when a new account was created.</p>
-                                    <button id="work1">View running Example</button>
+                                    <button class="workButton">View running Example</button>
                                     <a class="workLink" href="https://github.com/ThatDudeDan/Book-Project">Github Repo</a>
                                     <div class="thing">
                                         <span class="close">Close &#10006</span>
-                                        <video src="/2022-12-03 15-35-47.mp4" controls></video>
+                                        <video class="vid" src="/2022-12-03 15-35-47.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="con1">
+                            <div class="conWrap">
+                                <div class="workImg">
+                                    <img src="/QuizAppBasic.png">
+                                </div>
+                                <div class="work">
+                                    <p>I created a Book library using the Asp.Net framework through Visual studios, using C# on the backend, that allowed all Crud operations for different database tables, along with other functionality such as advanced sorting, searching and an email system when a new account was created.</p>
+                                    <button class="workButton2">View running Example</button>
+                                    <a class="workLink" href="https://github.com/ThatDudeDan/Book-Project">Github Repo</a>
+                                    <div class="thing2">
+                                        <span class="close2">Close &#10006</span>
+                                        <video class="vid2" src="/QuizAppBasic.png" controls></video>
                                     </div>
                                 </div>
                             </div>
@@ -74,39 +90,45 @@
     </body>
     
     <script type="text/javascript">
-        // function iframeLoaded() {
-        //     let iFrameID = document.getElementById('Walter');
-        //     iFrameID.classList.remove("inactive");
-        //     iFrameID.classList.add("active");
-        //     if(iFrameID) {
-        //           iFrameID.height = "";
-        //           iFrameID.width = "";
-        //           iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-        //           iFrameID.width = iFrameID.contentWindow.document.body.scrollWidth + "px";
-        //           console.log(iFrameID);
-        //     }   
-        // }
 
-        const btn = document.querySelector("#work1");
+        const btn = document.querySelector(".workButton");
+        const btn2 = document.querySelector(".workButton2");
 
         const videoCont = document.querySelector(".thing");
+        const videoCont2 = document.querySelector(".thing2");
 
-        const video = document.querySelector("video");
+        const video = document.querySelector(".vid");
+        const video2 = document.querySelector(".vid2");
 
-        const close = document.querySelector(".close");
+        const closer = document.querySelector(".close");
+        const closer2 = document.querySelector(".close2");
 
-        btn.addEventListener ("click", showVideo);
-        close.addEventListener ("click", hideVideo);
+
+        btn.addEventListener("click", showVideo);
+        btn2.addEventListener("click", showVideo2);
+        closer.addEventListener("click", hideVideo);
+        closer2.addEventListener("click", hideVideo2);
 
         function showVideo() {
-            videoCont.classList.add("show");
-            video.muted = false;
+                videoCont.classList.add("show");
+                video.muted = false;
+        }
+
+        function showVideo2() {
+                videoCont2.classList.add("show");
+                video2.muted = false;
         }
 
         function hideVideo () {
-            videoCont.classList.remove("show");
-            video.muted = true;
-            video.pause();
+                videoCont.classList.remove("show");
+                video.muted = true;
+                video.pause();
+        }
+
+        function hideVideo2 () {
+                videoCont2.classList.remove("show");
+                video2.muted = true;
+                video2.pause();
         }
       </script> 
 </html>
